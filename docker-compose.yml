@@ -21,7 +21,6 @@ services:
       - MYSQL_DATABASE=${DB_DATABASE}
   webapp:
     build: webapp
-    image: webapp
     environment:
       - DB_HOST=${DB_HOST}
       - DB_USER=${DB_USER}
